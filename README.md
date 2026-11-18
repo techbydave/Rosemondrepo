@@ -23,10 +23,29 @@ python3 -m http.server 8000
 # open http://localhost:8000
 ```
 
-## Deploy on GitHub Pages
+## Domain: ronagapecounselling.com
 
-Settings → Pages → Source: *Deploy from a branch* → `main` / root.
-To use the existing domain, add it under *Custom domain* (this creates a `CNAME` file) and point the domain's DNS to GitHub Pages.
+The site's official address is **https://ronagapecounselling.com** (set in `CNAME`, the canonical tags, `sitemap.xml`, `robots.txt` and the structured data in `index.html`).
+
+### Deploy on GitHub Pages
+
+1. Settings → Pages → Source: *Deploy from a branch* → `main` / root. The custom domain is read from `CNAME`.
+2. At the domain registrar, add DNS records:
+   - `A` records for `@` → `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` record for `www` → `techbydave.github.io`
+3. Once the DNS check passes in Settings → Pages, tick **Enforce HTTPS**.
+
+### Moving from ronfamilyagapecounsellingsolutions.com without losing Google rankings
+
+1. **Keep the old domain registered.** Don't let it expire.
+2. **301-redirect every old URL** to the same page on the new domain (on the old WordPress host, e.g. with a redirect plugin or `.htaccess`):
+   - `/` → `https://ronagapecounselling.com/`
+   - `/book-appointment/` → `https://ronagapecounselling.com/#book`
+   - anything else → `https://ronagapecounselling.com/`
+3. **Google Search Console:** verify both domains, submit `https://ronagapecounselling.com/sitemap.xml`, then use *Settings → Change of address* on the old property.
+4. **Update listings:** Google Business Profile, LinkedIn, email signatures and any directories.
+
+Expect a few weeks of ranking movement before things settle.
 
 ## Features
 
