@@ -428,6 +428,8 @@ svg use { pointer-events: none; }
 .footer__hours li { display: flex; justify-content: space-between; gap: 12px; }
 .footer__bottom { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; padding-top: 26px; font-size: .84rem; }
 .footer__bottom p { margin: 0; }
+.credit a { color: var(--peach); font-weight: 600; }
+.credit a:hover { color: #fff; }
 
 /* ---------- Back to top ---------- */
 .to-top { position: fixed; right: 24px; bottom: 24px; z-index: 90; width: 50px; height: 50px; border-radius: 50%; display: grid; place-items: center; background: var(--teal-700); box-shadow: var(--shadow); opacity: 0; transform: translateY(20px) scale(.8); pointer-events: none; transition: opacity .4s, transform .4s var(--ease-spring), background .3s; }
