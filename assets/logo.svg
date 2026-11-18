@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 52" role="img" aria-label="RON">
+  <text x="0" y="42" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="44" fill="#005153">R</text>
+  <g transform="translate(36 6)">
+    <circle cx="20" cy="20" r="17" fill="none" stroke="#005153" stroke-width="6"/>
+    <path d="M20 29.5c-.4 0-.8-.1-1.1-.4-3.7-3.2-7.4-6.2-7.4-10a4.6 4.6 0 0 1 8.5-2.4 4.6 4.6 0 0 1 8.5 2.4c0 3.8-3.7 6.8-7.4 10-.3.3-.7.4-1.1.4z" fill="#d6453d"/>
+  </g>
+  <text x="80" y="42" font-family="Fraunces, Georgia, serif" font-weight="700" font-size="44" fill="#005153">N</text>
+</svg>
